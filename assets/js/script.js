@@ -12,7 +12,7 @@ fetch(`https://api.themoviedb.org/3/movie/550?&poster_path&title&api_key=74dead5
       var posterImgEl = document.createElement("img");
       var h2El = document.createElement("h2");
       
-      posterImgEl.setAttribute("src","https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg")
+      posterImgEl.setAttribute("src","https://image.tmdb.org/t/p/original/a26cQPRhJPX6GbWfQbvZdrrp9j9.jpg");
       h2El.textContent = data.title;
       userReviewEl.textContent = data.overview;
       criticsReviewEl.textContent = " Status: " + data.status  + "Genres: " + data.genres[0].name +  " Popularity: " + data.popularity;
