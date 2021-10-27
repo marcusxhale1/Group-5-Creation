@@ -34,16 +34,22 @@
   span{
     color: #dab513;
   }
+  
 .poster-article{
     padding: 2%;
-    background-color: var(--secondary);
+   
 }
 .poster{
     height:auto;
     margin: 15% auto;
     justify-content: center;
     text-align: center;
+    padding: 25px;
+    background-color: var(--dark);
+    color: var(--tertiary);
+    border-radius: 10px;
 }
+
 img{
   width: 400px;
 }
@@ -52,11 +58,12 @@ input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
     width: 80%;
-    background-color: var(--primary);
-    border: 2px solid var(--dark);
     display: inline;
     border-radius: 5px;
+    color: var(--primary);
+    
   }
+  
  button{
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -64,6 +71,7 @@ input[type=text] {
     background-color: var(--primary);
     display: inline;
     border-radius: 5px;
+    cursor: pointer;
  }
 button:hover {
     color: var(--primary);
@@ -78,7 +86,7 @@ button:hover {
   }
   .user-reviews, .critic-reviews{
       border: 1px solid var(--light-dark);
-      height: 250px;
+      height: 300px;
       padding: 15px;
       text-align: center;
       margin: 10% auto;
@@ -87,7 +95,7 @@ button:hover {
   textarea{
       padding: 20px;
       width: 80%;
-      height: 100px;
+      height: 150px;
       border: 1px solid var(--secondary);
       
   }
