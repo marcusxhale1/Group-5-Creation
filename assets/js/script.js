@@ -104,7 +104,7 @@ function loadCities(){
 
    
    searchButtonEl.addEventListener("click", function(event){
-       posterEl.innerHTML = movies;
+       posterEl.innerHTML = "";
        $(loadMovies);
        event.preventDefault();
        
