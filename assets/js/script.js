@@ -44,11 +44,11 @@ searcButtonEl.addEventListener("click", function(event){
          var h2El = document.createElement("h2");
          var reviewsEl = document.createElement("img");
          // posterImgEl.setAttribute("src","https://image.tmdb.org/t/p/original/a26cQPRhJPX6GbWfQbvZdrrp9j9.jpg");
-         h2El.textContent = "";
-         posterImgEl.textContent = "";
-         reviewsEl.textContent = "";
-         userReviewEl.textContent = "";
-         criticsReviewEl.textContent = "";
+         //h2El.textContent = "";
+         //posterImgEl.textContent = "";
+         //reviewsEl.textContent = "";
+         //userReviewEl.textContent = "";
+         //criticsReviewEl.textContent = "";
          //posterEl.append(h2El);
          //posterEl.append(posterImgEl);
    //var ratings = imdbID;
@@ -75,12 +75,23 @@ fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
    response.json()
    .then(function(data){
         console.log(data);
+      
+        var ratings = ["0", "1", "2"];
         var ratingEl = document.createElement("p")
        var  imdEl = document.createElement("p");
+       if(ratings === ratings){
         criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
         ratingEl.textContent = "Rotten Tomatoes: " + data.Ratings[1].Value;
         imdEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
-
+       } else if (ratings === 0){
+          criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
+          imdEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
+       } else {
+         criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
+       }
+    for(var i = 0; i < ratings.length; i++){
+       
+    }
         criticsReviewEl.appendChild(ratingEl);
         criticsReviewEl.appendChild(imdEl);
         
