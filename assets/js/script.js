@@ -82,7 +82,7 @@ fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
          ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
          criticsReviewEl.appendChild(ratingEl);
         
-        
+        posterEl.innerHTML = "";
    })
 })
 }); 
