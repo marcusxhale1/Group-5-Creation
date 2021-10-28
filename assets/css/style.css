@@ -24,11 +24,11 @@
     text-align: center;
     background-color: var(--dark);
     font-weight: 700;
-    margin: 0;
     color: var(--primary);
     font-size: 35px;
+    
   }
-  h1{
+  .title{
       background-color: var(--dark);
   }
   span{
@@ -52,8 +52,15 @@
 
 img{
   width: 400px;
+  
 }
-
+#extra-img{
+  column-count: 2;
+}
+form{
+  background-color: var(--dark);
+  padding: 10px;
+}
 input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -85,16 +92,16 @@ button:hover {
   }
   .user-reviews, .critic-reviews{
       border: 1px solid var(--light-dark);
-      height: 300px;
+      height: 250px;
       padding: 15px;
       text-align: center;
-      margin: 10% auto;
+      margin: 5% auto;
       background-color: var(--secondary);
   }
   textarea{
       padding: 20px;
       width: 80%;
-      height: 150px;
+      height: 120px;
       border: 1px solid var(--secondary);
       
   }
