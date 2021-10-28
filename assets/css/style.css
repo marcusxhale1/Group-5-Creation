@@ -22,14 +22,16 @@
   .hero {
     padding: 1% 1%;
     text-align: center;
-    background-color: var(--dark);
+    background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-mazhar-3075993.jpg&fm=jpg");
     font-weight: 700;
     color: var(--primary);
     font-size: 35px;
-    
+    background-position: center;
   }
   .title{
-      background-color: var(--dark);
+    background-color: var(--dark);
+    border-top-right-radius: 100%;
+    border: 10px solid var(--primary);
   }
   span{
     color: #dab513;
@@ -74,14 +76,14 @@ input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
     width: 15%;
-    background-color: var(--primary);
+    background-color: var(--light-green);
     display: inline;
     border-radius: 5px;
     cursor: pointer;
  }
 button:hover {
-    color: var(--primary);
-    background-color: var(--light-green);
+    color: var(--dark);
+    background-color: var(--primary);
     transform: translate(0, 0);
     
   }
