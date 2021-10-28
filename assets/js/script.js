@@ -49,33 +49,44 @@ searcButtonEl.addEventListener("click", function(event){
          reviewsEl.textContent = "";
          userReviewEl.textContent = "";
          criticsReviewEl.textContent = "";
-   
          //posterEl.append(h2El);
          //posterEl.append(posterImgEl);
-   var idEl = data.results[0].id
+   //var ratings = imdbID;
    var movies = inputEl.value.trim();
    console.log(movies);
    var h2El = document.createElement("h2");
    var posterImgEl = document.createElement("img");
    var reviewsEl = document.createElement("img");
-   //var overviewEl = document.createElement("p");
+   var ratingEl = document.createElement("p")
    posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
    reviewsEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].backdrop_path);
    h2El.textContent = movies;
-   //overviewEl.textContent = data.results[0].poster_path //data.overview; 
    userReviewEl.textContent = data.results[0].overview;
-   criticsReviewEl.textContent = "Released date: "  + data.results[0].release_date +  " Popularity: " + data.results[0].popularity + " Votes Average: " + data.results[0].vote_average + " Vote Count: " + data.results[0].vote_count;
+  // criticsReviewEl.textContent = "Released date: "  + data.results[0].release_date +  " Popularity: " + data.results[0].popularity + " Votes Average: " + data.results[0].vote_average + " Vote Count: " + data.results[0].vote_count;
    posterEl.append(h2El);
    posterEl.append(posterImgEl);
-   extraImgEl.append(reviewsEl);
+   criticsReviewEl.appendChild(ratingEl)
+   //extraImgEl.append(reviewsEl);
    
-   
-});
    });
 });
+fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
+.then(function(response){
+   response.json()
+   .then(function(data){
+        console.log(data);
+        var ratingEl = document.createElement("p")
+       var  imdEl = document.createElement("p");
+        criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
+        ratingEl.textContent = "Rotten Tomatoes: " + data.Ratings[1].Value;
+        imdEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
 
-
-
+        criticsReviewEl.appendChild(ratingEl);
+        criticsReviewEl.appendChild(imdEl);
+        
+   })
+})
+}); 
 
 
 
