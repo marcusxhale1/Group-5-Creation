@@ -56,8 +56,8 @@ img{
   width: 400px;
   
 }
-#extra-img{
-  column-count: 2;
+#extra-img img{
+  margin: 0 25%;
 }
 form{
   background-color: var(--dark);
