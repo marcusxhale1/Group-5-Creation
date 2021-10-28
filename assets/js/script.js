@@ -76,24 +76,12 @@ fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
    .then(function(data){
         console.log(data);
       
-        var ratings = ["0", "1", "2"];
-        var ratingEl = document.createElement("p")
-       var  imdEl = document.createElement("p");
-       if(ratings === ratings){
-        criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
-        ratingEl.textContent = "Rotten Tomatoes: " + data.Ratings[1].Value;
-        imdEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
-       } else if (ratings === 0){
-          criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
-          imdEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
-       } else {
-         criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
-       }
-    for(var i = 0; i < ratings.length; i++){
-       
-    }
-        criticsReviewEl.appendChild(ratingEl);
-        criticsReviewEl.appendChild(imdEl);
+      
+      var ratingEl = document.createElement("p")
+       criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
+         ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
+         criticsReviewEl.appendChild(ratingEl);
+        
         
    })
 })
