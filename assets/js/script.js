@@ -1,6 +1,6 @@
 var extraImgEl = document.querySelector("#extra-img");
 var inputEl = document.querySelector("#movie-title");
-var searcButtonEl = document.querySelector("#searchbutton");
+var searchButtonEl = document.querySelector("#searchbutton");
 var posterEl = document.querySelector("#poster");
 var userReviewEl = document.querySelector("#plot");
 var criticsReviewEl = document.querySelector("#critic-ratings");
@@ -30,7 +30,7 @@ var criticsReviewEl = document.querySelector("#critic-ratings");
       //posterEl.append(h2El);
       //posterEl.append(posterImgEl);
    
-searcButtonEl.addEventListener("click", function(event){
+searchButtonEl.addEventListener("click", function(event){
    event.preventDefault();
    fetch('https://api.themoviedb.org/3/search/movie?api_key=74dead5790eecd4db2f834fbf9d66bf7&query=' + inputEl.value)
 
@@ -82,9 +82,38 @@ fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
          ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
          criticsReviewEl.appendChild(ratingEl);
         
-        posterEl.innerHTML = "";
    })
 })
+
+function saveMovies(){
+   var movies = inputEl.value.trim();
+   if(searchMovies.indexOf(movies)===-1){
+      searchMovies.push(movies);
+      localStorage.setItem("title", JSON.stringify(searchMovies));
+   }
+   return searchMovies.value;
+}
+function loadCities(){
+   posterEl.innerHTML = "";
+   var loadMovies =   JSON.parse(localStorage.getItem("title")) || [];
+   
+   for (let i = 0; i < loadMovies.length; i++) {
+       
+       var movies = loadMovies[i];
+
+   
+   searchButtonEl.addEventListener("click", function(event){
+       posterEl.innerHTML = "";
+       event.preventDefault();
+       
+   })
+
+   }
+
+}
+
+loadCities();
+
 }); 
 
 
