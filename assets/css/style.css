@@ -29,13 +29,13 @@
     background-position: center;
   }
   .title{
-    background-color: var(--secondary);
+    background-color: #1bbae2;
     border-top-right-radius: 100%;
     border: 10px solid var(--primary);
     color: var(--dark);
   }
   span{
-    color: #eee351;
+    color: #e21b1b;
   }
   
 .poster-article{
@@ -96,8 +96,9 @@ button:hover {
   }
   h2{
     font-size: 35px;
-    background-color:var(--primary);
+    background-color:rgb(255, 217, 0);
     border-radius: 50px;
+    border: 5px solid var(--primary);
   }
   .plot{
     background-image: url("https://wallpapercave.com/wp/wp1945939.jpg");
