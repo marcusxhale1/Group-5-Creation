@@ -52,7 +52,7 @@
 }
 .poster{
     height:auto;
-    margin: 15% auto;
+    margin: 10% auto;
     justify-content: center;
     text-align: center;
     padding: 25px;
@@ -98,7 +98,7 @@ button:hover {
   .plot, .critic-ratings{
       height: 400px;
       padding: 15px;
-      margin: 5% auto;
+      margin: 8% auto;
       border-radius: 10px;
       border: 20px solid var(--primary);
   }
