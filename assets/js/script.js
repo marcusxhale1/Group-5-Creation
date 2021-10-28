@@ -5,7 +5,7 @@ var posterEl = document.querySelector("#poster");
 var userReviewEl = document.querySelector("#plot");
 var criticsReviewEl = document.querySelector("#critic-ratings");
 
-
+var searchMovies = [];
 //fetch('https://api.themoviedb.org/3/search/movie?api_key=74dead5790eecd4db2f834fbf9d66bf7&query=' + inputEl.value)
 
 
@@ -83,12 +83,13 @@ fetch("http://www.omdbapi.com/?t=" + inputEl.value + "&apikey=f46c4fdd")
          criticsReviewEl.appendChild(ratingEl);
         
    })
+   saveMovies();
 })
 
 function saveMovies(){
    var movies = inputEl.value.trim();
    if(searchMovies.indexOf(movies)===-1){
-      searchMovies.push(movies);
+      searchMovies.push(movies)
       localStorage.setItem("title", JSON.stringify(searchMovies));
    }
    return searchMovies.value;
@@ -103,15 +104,14 @@ function loadCities(){
 
    
    searchButtonEl.addEventListener("click", function(event){
-       posterEl.innerHTML = "";
+       posterEl.innerHTML = movies;
+       $(loadMovies);
        event.preventDefault();
        
    })
 
    }
-
 }
-
 loadCities();
 
 }); 
