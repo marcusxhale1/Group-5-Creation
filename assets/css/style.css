@@ -13,28 +13,29 @@
   }
   
   body {
-    
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5;
+    background-color: var(--dark);
     
   }
   .hero {
     padding: 1% 1%;
     text-align: center;
-    background-image: url("https://i.fbcd.co/products/original/4b14f71e8781db669cb226a1f529453919172019f5447170211bdd69f849b028.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp1945909.jpg");
     font-weight: 700;
     color: var(--primary);
     font-size: 35px;
     background-position: center;
   }
   .title{
-    background-color: var(--dark);
+    background-color: var(--secondary);
     border-top-right-radius: 100%;
     border: 10px solid var(--primary);
+    color: var(--dark);
   }
   span{
-    color: #dab513;
+    color: #eee351;
   }
   
 .poster-article{
@@ -47,22 +48,16 @@
     justify-content: center;
     text-align: center;
     padding: 25px;
-    background-color: var(--dark);
     color: var(--tertiary);
     border-radius: 10px;
+    border: 10px solid var(--primary);
 }
 
 img{
   width: 400px;
   
 }
-#extra-img img{
-  margin: 0 25%;
-}
-form{
-  background-color: var(--dark);
-  padding: 10px;
-}
+
 input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -90,27 +85,36 @@ button:hover {
   
   .reviews-section{
       padding: 20px;
-      
+      text-align: center;
   }
   .plot, .critic-ratings{
-      border: 1px solid var(--light-dark);
-      height: 250px;
+      height: 400px;
       padding: 15px;
-      text-align: center;
       margin: 5% auto;
-      background-color: var(--secondary);
+      border-radius: 10px;
+      border: 20px solid var(--primary);
+  }
+  h2{
+    font-size: 35px;
+    background-color:var(--primary);
+    border-radius: 50px;
+  }
+  .plot{
+    background-image: url("https://wallpapercave.com/wp/wp1945939.jpg");
+  }
+  .critic-ratings{
+    background-image: url("https://babbletop.com/wp-content/uploads/2018/05/years-for-movies.jpg");
   }
   textarea{
       padding: 20px;
       width: 80%;
-      height: 120px;
-      border: 1px solid var(--secondary);
-      
+      height: 140px;
+
   }
   footer{
       width: 100%;
       text-align: center;
-      background-color: var(--dark);
+      background-color: #020202;
       color: var(--primary);
       padding: 1%;
   }
