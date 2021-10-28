@@ -1,8 +1,8 @@
 :root {
     --primary: #f3f7f4;
-    --secondary: #3fa2c9;
+    --secondary: #5ebfe6;
     --tertiary: #a0aaaa;
-    --light-dark: #1196b8;
+    --light-dark: #d57ddd;
     --light-green: #1bda9a;
     --dark: #020202;
     
@@ -22,7 +22,7 @@
   .hero {
     padding: 1% 1%;
     text-align: center;
-    background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-mazhar-3075993.jpg&fm=jpg");
+    background-image: url("https://i.fbcd.co/products/original/4b14f71e8781db669cb226a1f529453919172019f5447170211bdd69f849b028.jpg");
     font-weight: 700;
     color: var(--primary);
     font-size: 35px;
@@ -82,7 +82,7 @@ input[type=text] {
     cursor: pointer;
  }
 button:hover {
-    color: var(--dark);
+    color: #000;
     background-color: var(--primary);
     transform: translate(0, 0);
     
@@ -92,7 +92,7 @@ button:hover {
       padding: 20px;
       
   }
-  .user-reviews, .critic-reviews{
+  .plot, .critic-ratings{
       border: 1px solid var(--light-dark);
       height: 250px;
       padding: 15px;

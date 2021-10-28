@@ -2,10 +2,10 @@ var extraImgEl = document.querySelector("#extra-img");
 var inputEl = document.querySelector("#movie-title");
 var searcButtonEl = document.querySelector("#searchbutton");
 var posterEl = document.querySelector("#poster");
-var userReviewEl = document.querySelector("#user-reviews");
-var criticsReviewEl = document.querySelector("#critics-reviews");
-
-fetch(`https://api.themoviedb.org/3/movie/550?movies=` + inputEl.value + `&poster_path&title&imdb_id&api_key=74dead5790eecd4db2f834fbf9d66bf7`)
+var userReviewEl = document.querySelector("#plot");
+var criticsReviewEl = document.querySelector("#critic-ratings");
+//fetch("https://api.themoviedb.org/3/search/movie?query=" + inputEl.value + "api_key=74dead5790eecd4db2f834fbf9d66bf7")
+fetch(`https://api.themoviedb.org/3/movie/550?movies=` + inputEl.value + `&title&imdb_id&id&api_key=74dead5790eecd4db2f834fbf9d66bf7`)
 .then(function(response){
    response.json()
    .then(function(data){
