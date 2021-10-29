@@ -13,14 +13,15 @@
 </head>
 <body id="body">
     <header class="hero">
-        <h1 class="title">Blas<span>e</span> Blas<span>e</span></h1>
+        <h1 class="title">Blase Blase</h1>
         <span id="span">Stories-on-the-go!</span>
     </header>
     <main class="flex-row justify-space-between">
         <div class="col-12 col-md-4 poster-article ">
             <form>
-            <p style="color: aliceblue;">Looking for good movies? Checkout here!</p>
-            <input type="text" name="movies" id= "movie-title" placeholder="Search here...">
+            <p style="color: aliceblue;">Looking for a good movies? Checkout here!</p>
+            
+            <input type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here...">
             <button type="submit" id="searchbutton"><i class="fas fa-search"></i></button>
             </form>
             <div class="poster" id="poster"></div>
@@ -28,9 +29,9 @@
         </div>
         <div class="col-12 col-md-8 reviews-section">
             <div class="col-12 col-md-6 plot"><h2>Plot</h2>
-            <article placeholder="Write your thoughts here..." id="plot"></article></div>
+            <textarea id="plot"></textarea></div>
             <div class="col-12 col-md-6 critic-ratings" ><h2>Critic Rating</h2>
-            <article placeholder="Write yours thoughts here..."id="critic-ratings"></article></div>
+            <article id="critic-ratings"></article></div>
 
         </div>
     </main>
