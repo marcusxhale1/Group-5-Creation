@@ -41,7 +41,7 @@ function title(movies){
 
    h2El.textContent = movies;
    userReviewEl.textContent = data.results[0].overview;
-  
+   
    posterEl.append(h2El);
    posterEl.append(posterImgEl);
    criticsReviewEl.appendChild(ratingEl);
@@ -71,20 +71,21 @@ function saveMovies(){
       searchMovies.push(movies);
       localStorage.setItem("title", JSON.stringify(searchMovies));
    }
+   loadMovies();
    return searchMovies.value;
 }
 function loadMovies(){
-   posterEl.innerHTML = "";
-   var loadMovies =   JSON.parse(localStorage.getItem("title")) || [];
+   dropdownEl.innerHTML = [];
+  var loadMovies =   JSON.parse(localStorage.getItem("title")) || [];
    
    for (let i = 0; i < loadMovies.length; i++) {
        var movietitle = loadMovies[i];
     
     var moviesButtonEl = document.createElement("li");
-    moviesButtonEl.setAttribute("value", loadMovies[i]);
+     moviesButtonEl.setAttribute("value", loadMovies[i]);
      moviesButtonEl.textContent =  movietitle;
-     moviesButtonEl.className = "list-item"
-   moviesButtonEl.addEventListener("click", function(event){
+     moviesButtonEl.className = "list-item";
+    moviesButtonEl.addEventListener("click", function(event){
       event.preventDefault();
        posterEl.innerHTML = "";
        userReviewEl.innerHTML = "";
