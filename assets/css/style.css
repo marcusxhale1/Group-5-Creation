@@ -112,7 +112,7 @@ button:hover {
   }
   h2{
     font-size: 35px;
-    background-color:rgb(255, 238, 0);
+    background-color:var(--light-green);
     border-radius: 50px;
     border: 5px solid var(--primary);
   }
