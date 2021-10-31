@@ -3,7 +3,7 @@
     --secondary: #1caee7;
     --tertiary: #a0aaaa;
     --light-dark: #d57ddd;
-    --light-green: #1bda9a;
+    --light-green: #138d64;
     --dark: #020202;
     
   }
@@ -18,6 +18,24 @@
     line-height: 1.5;
     background-color: var(--dark);
     
+  }
+  #dropdown{
+    overflow: auto;
+    float: right;
+    background-color: whitesmoke;
+    width: 20%;
+    padding: 1em;
+    z-index: 1;
+  }
+  .list-item{
+    list-style:none;
+    padding: 5px 8px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-green);
+    color: var(--primary);
+    border: 1px solid var(--primary);
   }
   .hero {
     padding: 2% 1%;
@@ -35,13 +53,6 @@
     color: var(--dark);
     opacity: 0.8;
     
-  }
-
-  #span{
-    background: var(--primary);
-    padding: 12px;
-    border-radius: 10px;
-    color: var(--dark);
   }
 .poster-article{
     padding: 2%;
@@ -87,6 +98,7 @@ button:hover {
     
   }
   
+
   .reviews-section{
       padding: 20px;
       text-align: center;
@@ -122,8 +134,8 @@ button:hover {
   footer{
       width: 100%;
       text-align: center;
-      background-color: #020202;
-      color: var(--primary);
+      background-color: white;
+      color: var(--dark);
       padding: 1%;
       font-size: 22px;
   }
@@ -132,12 +144,6 @@ button:hover {
       
   }
  
-  
-  
-  
-  
-  
-  
   /* HEIGHT / WIDTH UTILS */
   .min-100-vh {
     min-height: 100vh;
