@@ -11,29 +11,34 @@
   <link rel="stylesheet" href="./assets/css/style.css">
     <title>Group-5-Creation</title>
 </head>
-<body id="body">
+    <body id="body"></body>
     <header class="hero">
-        <h1 class="title">Blas<span>e</span> Blas<span>e</span></h1>
+        <h1 class="title">Blase Blase</h1>
     </header>
     <main class="flex-row justify-space-between">
         <div class="col-12 col-md-4 poster-article ">
             <form>
-            <input type="text" name="movies" id= "movie-title" placeholder="Search here...">
+            <p style="color: aliceblue;">Looking for a good movies? Checkout here!</p>
+            <input type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here...">
             <button type="submit" id="searchbutton"><i class="fas fa-search"></i></button>
             </form>
             <div class="poster" id="poster"></div>
             </div>
         </div>
-        <div class="col-12 col-md-8 reviews-section">
-            <div class="col-12 col-md-8 justify-space-between" id="extra-img"></div>
+        <div class="col-12 col-md-2" id="dropdown">Your Last Search</div>
+        <div class="col-12 col-md-6 reviews-section">
             <div class="col-12 col-md-6 plot"><h2>Plot</h2>
-            <textarea placeholder="Write your thoughts here..." id="plot"></textarea></div>
-            <div class="col-12 col-md-6 critic-ratings" ><h2>Critic Rating</h2>
-            <textarea placeholder="Write yours thoughts here..."id="critic-ratings"></textarea></div>
+            <textarea id="plot"></textarea></div>
+            <div class="col-12 col-md-5 critic-ratings" ><h2>Critic Rating</h2>
+            <article id="critic-ratings"></article></div>
 
         </div>
     </main>
-    <footer>Group-5-Collaborative-Creation <i class="fas fa-heart" style="color: red;"></i><br>@Bootcamp UC Berkeley Extension 2021</footer>
+    <footer class="flex-row justify-space-between">
+        <div>Group-5-Collaborative-Creation <i class="fas fa-heart" style="color: red;"></i></div>
+          <div>@Bootcamp UC Berkeley Extension 2021</div>
+
+          </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>

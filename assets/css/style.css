@@ -1,9 +1,9 @@
 :root {
     --primary: #f3f7f4;
-    --secondary: #5ebfe6;
+    --secondary: #1caee7;
     --tertiary: #a0aaaa;
     --light-dark: #d57ddd;
-    --light-green: #1bda9a;
+    --light-green: #138d64;
     --dark: #020202;
     
   }
@@ -13,56 +13,66 @@
   }
   
   body {
-    
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5;
+    background-color: var(--dark);
     
   }
-  .hero {
-    padding: 1% 1%;
-    text-align: center;
-    background-image: url("https://i.fbcd.co/products/original/4b14f71e8781db669cb226a1f529453919172019f5447170211bdd69f849b028.jpg");
-    font-weight: 700;
+  #dropdown{
+    overflow: auto;
+    float: right;
+    background-color: whitesmoke;
+    width: 20%;
+    padding: 1em;
+    z-index: 1;
+  }
+  .list-item{
+    list-style:none;
+    padding: 5px 8px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-green);
     color: var(--primary);
-    font-size: 35px;
+    border: 1px solid var(--primary);
+  }
+  .hero {
+    padding: 2% 1%;
+    text-align: center;
+    background-image: url("https://wallpapercave.com/wp/wp1945909.jpg");
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 30px;
     background-position: center;
   }
   .title{
-    background-color: var(--dark);
-    border-top-right-radius: 100%;
-    border: 10px solid var(--primary);
+    background-color:var(--primary);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    color: var(--dark);
+    opacity: 0.8;
+    
   }
-  span{
-    color: #dab513;
-  }
-  
 .poster-article{
     padding: 2%;
    
 }
 .poster{
     height:auto;
-    margin: 15% auto;
+    margin: 10% auto;
     justify-content: center;
     text-align: center;
     padding: 25px;
-    background-color: var(--dark);
-    color: var(--tertiary);
     border-radius: 10px;
+    border: 10px solid var(--primary);
 }
 
 img{
   width: 400px;
   
 }
-#extra-img{
-  column-count: 2;
-}
-form{
-  background-color: var(--dark);
-  padding: 10px;
-}
+
 input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -88,43 +98,52 @@ button:hover {
     
   }
   
+
   .reviews-section{
       padding: 20px;
-      
+      text-align: center;
   }
   .plot, .critic-ratings{
-      border: 1px solid var(--light-dark);
-      height: 250px;
+      height: 400px;
       padding: 15px;
-      text-align: center;
-      margin: 5% auto;
-      background-color: var(--secondary);
+      margin: 8% auto;
+      border-radius: 10px;
+      border: 20px solid var(--primary);
   }
-  textarea{
+  h2{
+    font-size: 35px;
+    background-color:rgb(255, 238, 0);
+    border-radius: 50px;
+    border: 5px solid var(--primary);
+  }
+  .plot{
+    background-image: url("https://wallpapercave.com/wp/wp1945939.jpg");
+  }
+  .critic-ratings{
+    background-image: url("https://babbletop.com/wp-content/uploads/2018/05/years-for-movies.jpg");
+  }
+ textarea, article{
       padding: 20px;
       width: 80%;
-      height: 120px;
-      border: 1px solid var(--secondary);
-      
+      height: 140px;
+      margin: 0 auto;
+      background-color: var(--primary);
+      text-align: center;
+      font-size: 18px;
   }
   footer{
       width: 100%;
       text-align: center;
-      background-color: var(--dark);
-      color: var(--primary);
+      background-color: white;
+      color: var(--dark);
       padding: 1%;
+      font-size: 22px;
   }
   i:hover{
       color: white;
       
   }
  
-  
-  
-  
-  
-  
-  
   /* HEIGHT / WIDTH UTILS */
   .min-100-vh {
     min-height: 100vh;
