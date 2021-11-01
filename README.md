@@ -48,6 +48,7 @@ Have a quality README (with unique name, description, technologies used, screens
 * THEN I am again presented with the poster, plot and ratings of that certain movie
 
 ### Deployed application link
+https://marcusxhale1.github.io/Group-5-Creation/
 
 #### Snaphot of the application
 
