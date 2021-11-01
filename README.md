@@ -26,26 +26,26 @@ Have a quality README (with unique name, description, technologies used, screens
 
 ## Built with:
 
-HTML
-CSS
-Javascript
-Third paty API
-Bootstrap/Framework
-Git/Github
+* HTML
+* CSS
+* Javascript
+* Third paty API
+* Bootstrap/Framework
+* Git/Github
 
 ### USER STORY
 
 AS A Movie Lover
-I WANT to see different plot of movies and the ratings 
-SO THAT I can plan watch next movie to watch on next the weekend or whenever I have time
+I WANT to see different plot of movies and their ratings 
+SO THAT I can plan the next movie to watch
 
-GIVEN a movie search information with form inputs
+Given a user searches for a movie information through an input form
 WHEN I search for a movie title
 THEN I am presented with movie poster, plot and rating reviews for that movie and that movie is added to the search history
 WHEN I search for another movie title 
-THEN the old search history would disappear and replace by new search movie with poster, plot and ratings
+THEN the previous movie display will disappear and will be replaced by new movie with poster, plot and ratings
 WHEN I click on a movie title in the search history
-THEN I am again presented with the poster, plot and ratings
+THEN I am again presented with the poster, plot and ratings of that certain movie
 
 ### Deployed application link
 
