@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts and icons-->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!--application title-->
     <title>Group-5-Creation</title>
 </head>
     <body id="body"></body>
     <header class="hero">
+        <!--header title-->
         <h1 class="title">Blase Blase</h1>
     </header>
+    <!--hero card left-->
     <main class="flex-row justify-space-between">
         <div class="col-12 col-md-4 poster-article ">
             <form>
-            <p style="color: aliceblue;">Looking for a good movies? Checkout here!</p>
+            <p style="color: aliceblue;">Looking for a good movie? Enter a movie in the box!</p>
+            <!--search bar-->
             <input type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here...">
             <button type="submit" id="searchbutton"><i class="fas fa-search"></i></button>
             </form>
+            <!--first filled aspect after search: poster-->
             <div class="poster" id="poster"></div>
             </div>
         </div>
+        <!--local storage based history of past searches-->
         <div class="col-12 col-md-2" id="dropdown">Your Last Search</div>
         <div class="col-12 col-md-6 reviews-section">
+            <!--second filled aspect after search: plot-->
             <div class="col-12 col-md-6 plot"><h2>Plot</h2>
             <textarea id="plot"></textarea></div>
+            <!--third filled aspect after search: critic rating-->
             <div class="col-12 col-md-5 critic-ratings" ><h2>Critic Rating</h2>
             <article id="critic-ratings"></article></div>
 
