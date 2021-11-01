@@ -8,14 +8,13 @@ var criticsReviewEl = document.querySelector
 var dropdownEl = document.querySelector("#dropdown");
 var searchMovies = [];
 
-
 searchButtonEl.addEventListener("click", function(event){
    event.preventDefault();
    var movies = inputEl.value.trim(); 
    posterEl.textContent = "";
    userReviewEl.textContent = "";
    criticsReviewEl.textContent = "";
-
+   
    saveMovies();
    title(movies);
    ratings(movies);
@@ -31,21 +30,25 @@ function title(movies){
    
          console.log(data);
    var movies = inputEl.value.trim();
-   var posterImgEl = document.createElement("img");
+   var posterTitleEl = document.createElement("div");
+   var titleEl = document.createElement("h2");
       
    var posterImgEl = document.createElement("img");
    var ratingEl = document.createElement("p")
    posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
     
-   
+   titleEl.textContent = movies;
    userReviewEl.textContent = data.results[0].overview;
-   posterEl.append(posterImgEl);
+   posterEl.append(posterTitleEl);
+   posterTitleEl.append(titleEl);
+   posterTitleEl.append(posterImgEl);
    criticsReviewEl.appendChild(ratingEl);
    
    });
 });
-};
+}
 function ratings(movies){
+
 fetch("http://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
 .then(function(response){
    response.json()
@@ -76,17 +79,22 @@ function loadMovies(){
    
    for (let i = 0; i < loadMovies.length; i++) {
        var movietitle = loadMovies[i];
-    
+   
+   
+   var titleEl = document.createElement("div");
     var moviesButtonEl = document.createElement("li");
      moviesButtonEl.setAttribute("value", loadMovies[i]);
      moviesButtonEl.textContent =  movietitle;
      moviesButtonEl.className = "list-item";
-   moviesButtonEl.addEventListener("click", function(movies){
+     
+     moviesButtonEl.addEventListener("click", function(event){
       event.preventDefault();
        posterEl.innerHTML = "";
        userReviewEl.innerHTML = "";
        criticsReviewEl.innerHTML = "";
+       
        var movies = this.textContent;
+       
        title(movies);
        ratings(movies);
        
