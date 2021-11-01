@@ -8,17 +8,20 @@ var criticsReviewEl = document.querySelector
 var dropdownEl = document.querySelector("#dropdown");
 var searchMovies = [];
 
+
 searchButtonEl.addEventListener("click", function(event){
    event.preventDefault();
    var movies = inputEl.value.trim(); 
    posterEl.textContent = "";
    userReviewEl.textContent = "";
    criticsReviewEl.textContent = "";
+
    saveMovies();
    title(movies);
    ratings(movies);
 
 });
+
 function title(movies){
    fetch('https://api.themoviedb.org/3/search/movie?api_key=74dead5790eecd4db2f834fbf9d66bf7&query=' + movies)
 
@@ -27,22 +30,15 @@ function title(movies){
       .then(function(data){
    
          console.log(data);
-         var movies = inputEl.value.trim();
-         var posterImgEl = document.createElement("img");
-         var h2El = document.createElement("h2");
-         var reviewsEl = document.createElement("img");
-         
    var movies = inputEl.value.trim();
-   //console.log(movies);
-   var h2El = document.createElement("h2");
+   var posterImgEl = document.createElement("img");
+      
    var posterImgEl = document.createElement("img");
    var ratingEl = document.createElement("p")
    posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
-
-   h2El.textContent = movies;
-   userReviewEl.textContent = data.results[0].overview;
+    
    
-   posterEl.append(h2El);
+   userReviewEl.textContent = data.results[0].overview;
    posterEl.append(posterImgEl);
    criticsReviewEl.appendChild(ratingEl);
    
@@ -57,9 +53,9 @@ fetch("http://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
         console.log(data);
       
       var ratingEl = document.createElement("p")
-         criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
-         ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
-         criticsReviewEl.appendChild(ratingEl);
+      criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
+      ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
+      criticsReviewEl.appendChild(ratingEl);
         
    });
 });
@@ -85,7 +81,7 @@ function loadMovies(){
      moviesButtonEl.setAttribute("value", loadMovies[i]);
      moviesButtonEl.textContent =  movietitle;
      moviesButtonEl.className = "list-item";
-    moviesButtonEl.addEventListener("click", function(event){
+   moviesButtonEl.addEventListener("click", function(movies){
       event.preventDefault();
        posterEl.innerHTML = "";
        userReviewEl.innerHTML = "";
@@ -101,7 +97,7 @@ function loadMovies(){
 function showHistory() {
    var loadMovies = JSON.parse(localStorage.getItem("title")) || [];
    for (let i = 0; i < loadMovies.length; i++) {
-     loadMovies.innerHTML = "a";
+     loadMovies.innerHTML = "li";
      loadMovies.setAttribute("value", loadMovies[i]);
      cityContainerEl.append(loadMovies[i]);
    }
