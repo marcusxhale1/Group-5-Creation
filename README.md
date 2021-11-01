@@ -2,36 +2,24 @@
 
 
 ### Project Requirements
-
-Use a CSS framework other than Bootstrap.
-
-Be deployed to GitHub Pages.
-
-Be interactive (i.e., accept and respond to user input).
-
-Use at least two server-side APIs.
-
-Does not use alerts, confirms, or prompts (use modals).
-
-Use client-side storage to store persistent data.
-
-Be responsive.
-
-Have a polished UI.
-
-Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+* We are task to build a web application that
+use a CSS framework other than Bootstrap. 
+* The application should be deployed to GitHub Pages. It should be interactive (i.e., accept and respond to user input).
+* We are asked to use at least two server-side APIs.
+* We should not use alerts, confirms, or prompts (use modals).
+* The application should have client-side storage to store persistent data, be responsive and have a polished UI/User Interface.
+* It should have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+* The application should have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 
 ## Built with:
 
-* HTML
-* CSS
-* Javascript
-* Third paty API
-* Bootstrap/Framework
-* Git/Github
+* HTML - We used to layout the interface of the website with a touch of Bootstrap
+* CSS - We used to style the website, like colors, margins, paddings and adjusting the designs for the application
+* Javascript - We used this language to manipulate the inputs, data to display and supports the HTML and CSS functionalities.
+* Third party API - We used this source to retrieved data and informations about our website
+* Bootstrap/Mediaqueries - We used this CDN to help us build a responsive design
+* Git/Github - We used this application to work together or collaborate in build this project
 
 ### USER STORY
 
