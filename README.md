@@ -1,4 +1,5 @@
-# Group-5-Creation
+# Group-5-Creation/ FRONT-END INTERACTIVE UI
+
 
 ### Project Requirements
 
@@ -49,3 +50,5 @@ THEN I am again presented with the poster, plot and ratings
 ### Deployed application link
 
 #### Snaphot of the application
+
+![20211031_200322](https://user-images.githubusercontent.com/65073138/139616159-85b813e9-00b9-4ff2-9d25-11e1e5c28a80.jpg)
