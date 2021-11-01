@@ -35,17 +35,17 @@ Have a quality README (with unique name, description, technologies used, screens
 
 ### USER STORY
 
-AS A Movie Lover
-I WANT to see different plot of movies and their ratings 
-SO THAT I can plan the next movie to watch
+* AS A Movie Lover
+* I WANT to see different plot of movies and their ratings 
+* SO THAT I can plan the next movie to watch
 
-Given a user searches for a movie information through an input form
-WHEN I search for a movie title
-THEN I am presented with movie poster, plot and rating reviews for that movie and that movie is added to the search history
-WHEN I search for another movie title 
-THEN the previous movie display will disappear and will be replaced by new movie with poster, plot and ratings
-WHEN I click on a movie title in the search history
-THEN I am again presented with the poster, plot and ratings of that certain movie
+* Given a user searches for a movie information through an input form
+* WHEN I search for a movie title
+* THEN I am presented with movie poster, plot and rating reviews for that movie and that movie is added to the search history
+* WHEN I search for another movie title 
+* THEN the previous movie display will disappear and will be replaced by new movie with poster, plot and ratings
+* WHEN I click on a movie title in the search history
+* THEN I am again presented with the poster, plot and ratings of that certain movie
 
 ### Deployed application link
 
