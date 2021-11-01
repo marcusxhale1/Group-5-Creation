@@ -14,7 +14,6 @@ searchButtonEl.addEventListener("click", function(event){
    posterEl.textContent = "";
    userReviewEl.textContent = "";
    criticsReviewEl.textContent = "";
-   
    saveMovies();
    title(movies);
    ratings(movies);
@@ -30,34 +29,31 @@ function title(movies){
    
          console.log(data);
    var movies = inputEl.value.trim();
-   var posterTitleEl = document.createElement("div");
-   var titleEl = document.createElement("h2");
-      
+   var titleEl = document.createElement("h2")  
    var posterImgEl = document.createElement("img");
    var ratingEl = document.createElement("p")
    posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
-    
-   titleEl.textContent = movies;
+   titleEl.textContent = data.results[0].title;
    userReviewEl.textContent = data.results[0].overview;
-   posterEl.append(posterTitleEl);
-   posterTitleEl.append(titleEl);
-   posterTitleEl.append(posterImgEl);
+   posterEl.append(titleEl)
+   posterEl.append(posterImgEl);
    criticsReviewEl.appendChild(ratingEl);
    
    });
 });
 }
-function ratings(movies){
 
+function ratings(movies){
 fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
 .then(function(response){
    response.json()
    .then(function(data){
         console.log(data);
-      
+      //var titleEl = document.createElement("h2");
       var ratingEl = document.createElement("p")
       criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
       ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
+      //titleEl.textContent = data.Title;
       criticsReviewEl.appendChild(ratingEl);
         
    });
@@ -81,7 +77,7 @@ function loadMovies(){
        var movietitle = loadMovies[i];
    
    
-   var titleEl = document.createElement("div");
+    
     var moviesButtonEl = document.createElement("li");
      moviesButtonEl.setAttribute("value", loadMovies[i]);
      moviesButtonEl.textContent =  movietitle;
@@ -89,12 +85,12 @@ function loadMovies(){
 
      moviesButtonEl.addEventListener("click", function(event){
       event.preventDefault();
+
        posterEl.innerHTML = "";
        userReviewEl.innerHTML = "";
        criticsReviewEl.innerHTML = "";
-       
+
        var movies = this.textContent;
-       
        title(movies);
        ratings(movies);
        

@@ -72,7 +72,12 @@ img{
   width: 400px;
   
 }
-
+a:active{
+  color: rgb(0, 255, 149);
+}
+a:visited{
+  color: #1caee7;
+}
 input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
