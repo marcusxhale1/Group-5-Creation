@@ -49,7 +49,7 @@ function title(movies){
 }
 function ratings(movies){
 
-fetch("http://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
+fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
 .then(function(response){
    response.json()
    .then(function(data){
@@ -86,7 +86,7 @@ function loadMovies(){
      moviesButtonEl.setAttribute("value", loadMovies[i]);
      moviesButtonEl.textContent =  movietitle;
      moviesButtonEl.className = "list-item";
-     
+
      moviesButtonEl.addEventListener("click", function(event){
       event.preventDefault();
        posterEl.innerHTML = "";
