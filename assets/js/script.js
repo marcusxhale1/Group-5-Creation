@@ -17,20 +17,18 @@ searchButtonEl.addEventListener("click", function(event){
    saveMovies();
    title(movies);
    ratings(movies);
-
+   getPoster(movies);
 });
 
 function title(movies){
    fetch('https://api.themoviedb.org/3/search/movie?api_key=74dead5790eecd4db2f834fbf9d66bf7&query=' + movies)
-
    .then(function(response){
       response.json()
       .then(function(data){
-   
-         console.log(data);
-   var movies = inputEl.value.trim();
-   var titleEl = document.createElement("h2")  
-   var posterImgEl = document.createElement("img");
+      console.log(data);     
+     var movies = inputEl.value.trim();
+     var titleEl = document.createElement("h2")  
+     var posterImgEl = document.createElement("img");
    var ratingEl = document.createElement("p")
    posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
    titleEl.textContent = data.results[0].title;
@@ -38,7 +36,7 @@ function title(movies){
    posterEl.append(titleEl)
    posterEl.append(posterImgEl);
    criticsReviewEl.appendChild(ratingEl);
-   
+      
    });
 });
 }
@@ -49,15 +47,33 @@ fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
    response.json()
    .then(function(data){
         console.log(data);
-      //var titleEl = document.createElement("h2");
+      
       var ratingEl = document.createElement("p")
       criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
       ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
-      //titleEl.textContent = data.Title;
       criticsReviewEl.appendChild(ratingEl);
         
    });
 });
+}
+
+function getPoster(movies){
+   var apiUrl = 'https://api.themoviedb.org/3/search/movie?api_key=74dead5790eecd4db2f834fbf9d66bf7&query=' + movies;
+   fetch(apiUrl).then (function(response){
+      if (response.ok){
+         response.json(function(data){
+              console.log(data)
+            var posterImgEl = document.createElement("img");
+            posterImgEl.setAttribute("src", "https://image.tmdb.org/t/p/original/" + data.results[0].poster_path);
+
+         });
+      } else{
+         var poster2ImgEl = document.createElement("img");
+         poster2ImgEl.setAttribute("src" ,  "https://image.tmdb.org/t/p/original/" + data.results[0].backdrop_path);
+      }
+      posterEl.append(poster2ImgEl);
+     
+   });
 }
 
 function saveMovies(){
