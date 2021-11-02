@@ -19,24 +19,7 @@
     background-color: var(--dark);
     
   }
-  #dropdown{
-    overflow: auto;
-    float: right;
-    background-color: whitesmoke;
-    width: 20%;
-    padding: 1em;
-     
-  }
-  .list-item{
-    list-style:none;
-    padding: 5px 8px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: var(--light-green);
-    color: var(--primary);
-    border: 1px solid var(--primary);
-  }
+  
   .hero {
     padding: 2% 1%;
     text-align: center;
@@ -45,6 +28,7 @@
     color: var(--primary);
     font-size: 30px;
     background-position: center;
+    border-bottom: 10px solid  var(--primary);
   }
   .title{
     background-color:var(--primary);
@@ -54,13 +38,14 @@
     opacity: 0.8;
     
   }
+  
 .poster-article{
     padding: 2%;
    
 }
 .poster{
     height:auto;
-    margin: 15% auto;
+    margin: 10% auto;
     justify-content: center;
     text-align: center;
     padding: 25px;
@@ -102,11 +87,28 @@ button:hover {
     transform: translate(0, 0);
     
   }
-  
-
+  #dropdown{
+    overflow: auto;
+    float: right;
+    background-color: whitesmoke;
+    width: 20%;
+    padding: 1em;
+    margin: 3% auto;
+  }
+  .list-item{
+    list-style:none;
+    padding: 5px 8px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-green);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    margin: 2% auto;
+  }
   .reviews-section{
-      padding: 20px;
       text-align: center;
+      
   }
   .plot, .critic-ratings{
       height: 400px;
