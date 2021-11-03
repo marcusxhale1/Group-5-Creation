@@ -46,7 +46,7 @@ function title(movies){
    
    });
 });
-}
+};
 //API fetch function for ratings from OMDB//
 function ratings(movies){
 fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
@@ -65,7 +65,7 @@ fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
         
    });
 });
-}
+};
 //function for saving, displaying, and re-displaying old searches//
 function saveMovies(){
    var movies = inputEl.value.trim();
@@ -107,6 +107,7 @@ function loadMovies(){
    dropdownEl.append(moviesButtonEl);
    }
 }
+
 function showHistory() {
    var loadMovies = JSON.parse(localStorage.getItem("title")) || [];
    for (let i = 0; i < loadMovies.length; i++) {
