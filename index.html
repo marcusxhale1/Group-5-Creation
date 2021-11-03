@@ -13,14 +13,14 @@
   <!--application title-->
     <title>Group-5-Creation</title>
 </head>
-    <body id="body"></body>
+    <body id="body">
     <header class="hero">
         <!--header title-->
         <h1 class="title">Blase Blase</h1>
     </header>
     <!--hero card left-->
     <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4 poster-article ">
+        <div class="col-lg-4 col-md-8 poster-article ">
             <form>
             <p style="color: aliceblue;">Looking for a good movies?   <a href="https://www.hotstar.com/in/movies"> Checkout here! </a></p>
             <!--search bar-->
@@ -31,23 +31,24 @@
             <div class="poster" id="poster"></div>
             </div>
         
-        <div class="col-12 col-md-2" id="dropdown">
+        <div class="col-lg-2 col-md-4 " id="dropdown">
         </div>
         <!--local storage based on history of past searches-->
-        <div class="col-12 col-md-6 reviews-section">
+        <div class="col-lg-6 col-md-12 reviews-section">
             <!--second filled aspect after search: plot-->
-            <div class="col-12 col-md-6 plot"><h2>Plot</h2>
+            <div class="col-lg-12 col-md-6  plot"><h2>Plot</h2>
             <textarea id="plot"></textarea></div>
             <!--third filled aspect after search: critic rating-->
-            <div class="col-12 col-md-5 critic-ratings" ><h2>Critic Rating</h2>
+            <div class="col-lg-12 col-md-5 critic-ratings" ><h2>Critic Rating</h2>
             <article id="critic-ratings"></article></div>
         </div>
     </main>
+    <!--footer-->
     <footer class="flex-row justify-space-between">
         <div>Group-5-Collaborative-Creation <i class="fas fa-heart" style="color: red;"></i></div>
           <div>@Bootcamp UC Berkeley Extension 2021</div>
-
-          </footer>
+    </footer>
+    <!-- links for the script-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>

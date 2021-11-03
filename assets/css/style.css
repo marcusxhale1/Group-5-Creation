@@ -1,3 +1,4 @@
+/* rooot colors */
 :root {
     --primary: #f3f7f4;
     --secondary: #1caee7;
@@ -11,7 +12,7 @@
   * {
     box-sizing: border-box;
   }
-  
+  /* style the body */
   body {
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
@@ -19,7 +20,7 @@
     background-color: var(--dark);
     
   }
-  
+  /* style the hero or header of the page */
   .hero {
     padding: 2% 1%;
     text-align: center;
@@ -30,6 +31,7 @@
     background-position: center;
     border-bottom: 10px solid  var(--primary);
   }
+  /* style the title */
   .title{
     background-color:var(--primary);
     border-bottom-left-radius: 100px;
@@ -38,7 +40,7 @@
     opacity: 0.8;
     
   }
-  
+  /* style the poster section */
 .poster-article{
     padding: 2%;
    
@@ -52,17 +54,19 @@
     border-radius: 10px;
     border: 10px solid var(--primary);
 }
-
+/* set the width of images */
 img{
   width: 100%;
   
 }
+/* style the link text */
 a:active{
   color: rgb(0, 255, 149);
 }
 a:visited{
   color: #1caee7;
 }
+/* style the input form */
 input[type=text] {
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -71,7 +75,7 @@ input[type=text] {
     border-radius: 5px;
     
   }
-  
+  /* style the buttons */
  button{
     font-size: 1.3rem;
     padding: 12px 8px;
@@ -87,6 +91,7 @@ button:hover {
     transform: translate(0, 0);
     
   }
+  /* style the dropdown or button history */
   #dropdown{
     overflow: auto;
     float: right;
@@ -106,6 +111,7 @@ button:hover {
     border: 1px solid var(--primary);
     margin: 2% auto;
   }
+  /* style the reviews section*/
   .reviews-section{
       text-align: center;
       
@@ -117,18 +123,21 @@ button:hover {
       border-radius: 10px;
       border: 20px solid var(--primary);
   }
+  /* style the h2 element */
   h2{
     font-size: 35px;
     background-color:var(--light-green);
     border-radius: 50px;
     border: 5px solid var(--primary);
   }
+  /* style the background */
   .plot{
-    background-image: url("https://wallpapercave.com/wp/wp1945939.jpg");
-  }
-  .critic-ratings{
     background-image: url("https://babbletop.com/wp-content/uploads/2018/05/years-for-movies.jpg");
   }
+  .critic-ratings{
+    background-image: url("https://wallpapercave.com/wp/wp1945939.jpg");
+  }
+  /* style the textarea and article */
  textarea, article{
       padding: 20px;
       width: 80%;
@@ -138,6 +147,7 @@ button:hover {
       text-align: center;
       font-size: 18px;
   }
+  /* style the footer */
   footer{
       width: 100%;
       text-align: center;
@@ -174,6 +184,7 @@ button:hover {
   .col-12 {
     flex: 0 0 100%;
   }
+  /* set layout for 280px device */
   @media screen and(max-width:280px){
     .poster-article{
      width: 100%;
@@ -188,6 +199,18 @@ button:hover {
       width: 100%;
     }
 
+  }
+  /* set layout for 575px devices */
+  @media screen and (max-width:575px) {
+    .poster-article{
+      width: 100%;
+    }
+    #dropdown{
+      width: 100%;
+    }
+    .reviews-section{
+      width: 100%;
+    }
   }
 /* col-sm */
 @media screen and (min-width: 640px) {
