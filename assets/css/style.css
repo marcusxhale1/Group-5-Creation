@@ -61,6 +61,9 @@ img{
   width: 100%;
   
 }
+p{
+  color: var(--primary);
+}
 /* style the link text */
 a:active{
   color: rgb(0, 255, 149);
@@ -113,6 +116,7 @@ button:hover {
     border: 1px solid var(--primary);
     margin: 2% auto;
     text-align: center;
+    
   }
   /* style the reviews section*/
   .reviews-section{
@@ -211,279 +215,88 @@ button:hover {
   @media screen and (max-width:575px) {
     .poster-article{
       width: 100%;
+      
     }
     #dropdown{
       width: 100%;
     }
     .reviews-section{
       width: 100%;
+      
     }
     article{
       height: auto;
     }
   }
   @media screen and (max-width:768px) {
-     .poster-article, .reviews-section{
+     .reviews-section{
+       width: 100%;
+     }
+    .poster-article{
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      
+    }
+   #dropdown, .list-item{
+      text-align: center;
+      width: 100%;
+     
+   }
+  }
+@media screen and (max-width:970px) {
+  .poster-article{
+    width: 100%;
+  }
+}
+
+  @media screen and (min-width:575px){
+    #dropdown, .list-item{
+      width: 75%;
+    }
+    .poster-article{
+      width: 80%;
+      
+    }
+    .reviews-section{
       width: 100%;
     }
-   #dropdown{
-     width: 80%;
-     text-align: center;
-   }
-    
   }
 /* col-sm */
-@media screen and (min-width: 640px) {
-  .col-sm-1 {
-    flex: 0 0 calc(100% * 1 / 12 - 2%);
-  }
-
-  .col-sm-2 {
-    flex: 0 0 calc(100% * 2 / 12 - 2%);
-  }
-
-  .col-sm-3 {
-    flex: 0 0 calc(100% * 3 / 12 - 2%);
-  }
-
-  .col-sm-4 {
-    flex: 0 0 calc(100% * 4 / 12 - 2%);
-  }
-
-  .col-sm-5 {
-    flex: 0 0 calc(100% * 5 / 12 - 2%);
-  }
-
-  .col-sm-6 {
-    flex: 0 0 calc(100% * 6 / 12 - 2%);
-  }
-
-  .col-sm-7 {
-    flex: 0 0 calc(100% * 7 / 12 - 2%);
-  }
-
-  .col-sm-8 {
-    flex: 0 0 calc(100% * 8 / 12 - 2%);
-  }
-
-  .col-sm-9 {
-    flex: 0 0 calc(100% * 9 / 12 - 2%);
-  }
-
-  .col-sm-10 {
-    flex: 0 0 calc(100% * 10 / 12 - 2%);
-  }
-  .col-sm-11 {
-    flex: 0 0 calc(100% * 11 / 12 - 2%);
-  }
-
-  .col-sm-12 {
-    flex: 0 0 100%;
-  }
-}
-
-
-/* col-md */
 @media screen and (min-width: 768px) {
-  .col-md-1 {
-    flex: 0 0 calc(100% * 1 / 12 - 2%);
+  .poster-article{
+    text-align: center;
+    margin: 0 auto;
+    
   }
-
-  .col-md-2 {
-    flex: 0 0 calc(100% * 2 / 12 - 2%);
+  textarea, article{
+    margin: 0 auto;
+    width: 90%;
   }
-
-  .col-md-3 {
-    flex: 0 0 calc(100% * 3 / 12 - 2%);
+  #dropdown{
+    width: 50%;
   }
-
-  .col-md-4 {
-    flex: 0 0 calc(100% * 4 / 12 - 2%);
+  .reviews-section{
+    width: 100%;
+    
   }
-
-  .col-md-5 {
-    flex: 0 0 calc(100% * 5 / 12 - 2%);
-  }
-
-  .col-md-6 {
-    flex: 0 0 calc(100% * 6 / 12 - 2%);
-  }
-
-  .col-md-7 {
-    flex: 0 0 calc(100% * 7 / 12 - 2%);
-  }
-
-  .col-md-8 {
-    flex: 0 0 calc(100% * 8 / 12 - 2%);
-  }
-  .col-md-9 {
-    flex: 0 0 calc(100% * 9 / 12 - 2%);
-  }
-
-  .col-md-10 {
-    flex: 0 0 calc(100% * 10 / 12 - 2%);
-  }
-
-  .col-md-11 {
-    flex: 0 0 calc(100% * 11 / 12 - 2%);
-  }
-
-  .col-md-12 {
-    flex: 0 0 100%;
+  iframe{
+    width: 80%;
+    height: 450px;
   }
 }
-  
-  @media screen and (min-width: 992px) {
-    .col-lg-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-lg-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-lg-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-lg-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-lg-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-lg-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-lg-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-lg-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-lg-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-lg-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-lg-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-lg-12 {
-      flex: 0 0 100%;
-    }
+@media screen and (min-width:1200px){
+  .poster-article{
+    width: 30%;
   }
-  /* col-lg */
-  @media screen and (min-width: 992px) {
-    .col-lg-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-lg-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-lg-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-lg-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-lg-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-lg-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-lg-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-lg-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-lg-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-lg-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-lg-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-lg-12 {
-      flex: 0 0 100%;
-    }
+  .reviews-section{
+    width: 50%;
+    padding: 1%;
   }
-  
-  /* col-xl */
-  @media screen and (min-width: 1200px) {
-    .col-xl-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-xl-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-xl-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-xl-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-xl-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-xl-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-xl-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-xl-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-xl-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-xl-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-xl-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-xl-12 {
-      flex: 0 0 100%;
-    }
+  #dropdown{
+    width: 20%;
   }
-  
-  
-  
-  
+  iframe{
+    width: 100%;
+  }
+}

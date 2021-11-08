@@ -13,7 +13,7 @@
   <!--application title-->
     <title>Group-5-Creation</title>
 </head>
-    <body id="body">
+    <body>
     <header class="hero"></header>
     <!--header title-->
     <h1 class="title">Stories-on-the-go!</h1>
@@ -21,8 +21,6 @@
     <main class="flex-row justify-space-between">
         <div class="col-lg-4 col-md-8 poster-article ">
             <form>
-            <p style="color: aliceblue;">Looking for a good movies?   <a href="https://www.hotstar.com/in/movies"> Checkout here! </a></p>
-            
                 <!--search bar-->
             <input list="list-item" type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here">
             <button type="submit" id="searchbutton"><i class="fas fa-search"></i></button>
@@ -34,7 +32,7 @@
                <option value="Anatomy of a Murder"></option>
                <option value="Alien"></option>
                <option value="Argo"></option>
-               <option value="Stage Fight"></option>
+               <option value="Cinderella"></option>
                <option value="After Alice"></option>
                <option value="Air Force One"></option>
                <option value="A Nightmare on Elm Street"></option>
@@ -78,9 +76,12 @@
             </datalist>
 
             <!--first filled aspect after search: poster-->
+            
+            <p>This site is providing you information about movies. The poster, plot and critics are given so that you will have idea about a certain movie if you're planning to watch whenever you want. Enjoy the searching! </p>
+            <p style="color: aliceblue;">Looking for a good movies?   <a href="https://www.hotstar.com/in/movies"> Checkout here! </a></p>
             <div class="poster" id="poster"></div>
             </div>
-    
+   
         <!--local storage based on history of past searches-->
         <div class="col-lg-5 col-md-12 reviews-section">
             <!--second filled aspect after search: plot-->
@@ -90,10 +91,10 @@
             <h3>Critic Rating</h3>
             <article id="critic-ratings"></article>
             <iframe  src="https://www.youtube.com/embed/ax6z-j-xEMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        </div>
         </div>
     
-        <div class="col-lg-3 col-md-4 " id="dropdown">
+        <div class="col-lg-3 col-md-5 " id="dropdown">
         </div>
     </main>
         
