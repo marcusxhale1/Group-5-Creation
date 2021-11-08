@@ -1,6 +1,7 @@
 # Group-5-Creation/ FRONT-END INTERACTIVE UI
 
 ![MIT](https://img.shields.io/github/license/Alma-Dev914/Group-5-Creation)
+
 ## License
 MIT License
 
