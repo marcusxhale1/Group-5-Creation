@@ -61,9 +61,6 @@ img{
   width: 100%;
   
 }
-p{
-  color: var(--primary);
-}
 /* style the link text */
 a:active{
   color: rgb(0, 255, 149);
