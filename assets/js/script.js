@@ -29,9 +29,9 @@ function title(movies){
    .then(function(response){
       response.json()
       .then(function(data){
-         //dynamic html elements created i.e. poster, plot..//
-         console.log(data);
-         //getting the value of the user specified movie title//
+      //dynamic html elements created i.e. poster, plot..//
+      console.log(data);
+      //getting the value of the user specified movie title//
    var movies = inputEl.value.trim();
    var titleEl = document.createElement("h2")  
    var posterImgEl = document.createElement("img");
@@ -57,15 +57,24 @@ fetch("https://www.omdbapi.com/?t=" + movies + "&apikey=f46c4fdd")
       //var titleEl = document.createElement("h2");
       //dynamic html element created for ratings//
       var ratingEl = document.createElement("p")
+      var directorEl = document.createElement("p")
+      var actorEl = document.createElement("p")
+      
       //pathing from data for display//
       criticsReviewEl.textContent = "ImdbRating: " + data.imdbRating;
       ratingEl.textContent = "Internet Movie Database: " + data.Ratings[0].Value;
+      directorEl.textContent = "Director: " + data.Director + ","  + " Writer: " + data.Writer;
+      actorEl.textContent =  " Actors: " + data.Actors;
+      
       //titleEl.textContent = data.Title;
       criticsReviewEl.appendChild(ratingEl);
-        
+      criticsReviewEl.appendChild(directorEl);
+      criticsReviewEl.appendChild(actorEl);
+      
    });
 });
 };
+
 //function for saving, displaying, and re-displaying old searches//
 function saveMovies(){
    var movies = inputEl.value.trim();

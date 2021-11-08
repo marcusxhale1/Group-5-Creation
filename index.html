@@ -14,11 +14,9 @@
     <title>Group-5-Creation</title>
 </head>
     <body id="body">
-    <header class="hero">
-        <!--header title-->
-        <h1 class="title">Blase Blase</h1>
-    </header>
-    
+    <header class="hero"></header>
+    <!--header title-->
+    <h1 class="title">Stories-on-the-go!</h1>
         <!--hero card left-->
     <main class="flex-row justify-space-between">
         <div class="col-lg-4 col-md-8 poster-article ">
@@ -26,23 +24,76 @@
             <p style="color: aliceblue;">Looking for a good movies?   <a href="https://www.hotstar.com/in/movies"> Checkout here! </a></p>
             
                 <!--search bar-->
-            <input type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here">
+            <input list="list-item" type="text" name="movies" onfocus="this.value=''" id= "movie-title" placeholder="Search here">
             <button type="submit" id="searchbutton"><i class="fas fa-search"></i></button>
             </form>
+            <datalist id="list-item">
+               <option value="Avengers"></option> 
+               <option value="Alice in Wonderland"></option>
+               <option value="Above Suspicion"></option>
+               <option value="Anatomy of a Murder"></option>
+               <option value="Alien"></option>
+               <option value="Argo"></option>
+               <option value="Stage Fight"></option>
+               <option value="After Alice"></option>
+               <option value="Air Force One"></option>
+               <option value="A Nightmare on Elm Street"></option>
+               <option value="Amityville 3-D"></option>
+               <option value="A Stolen Life"></option>
+               <option value="Dial M for Murder"></option>
+               <option value="A FistFul of Dollars"></option>
+               <option value="Notorious"></option>
+               <option value="Another Day"></option>
+               <option value="A Kiss So Deadly"></option>
+               <option value="Atonement"></option>
+               <option value="Deadly Encounter"></option>
+               <option value="Titanic"></option>
+               <option value="Independence Day"></option>
+               <option value="Ghostbusters"></option>
+               <option value="Pretty Woman"></option>
+               <option value="Jurrassic Park"></option>
+               <option value="Saving private Ryan"></option>
+               <option value="The Day After Tomorrow"></option>
+               <option value="The Fujitive"></option>
+               <option value="Sonic the Hedgehog"></option>
+               <option value="There's something About Mary"></option>
+               <option value="Gone With the Wind"></option>
+               <option value="Star Wars"></option>
+               <option value="The sound of music"></option>
+               <option value="The Ten Commandments"></option>
+               <option value="Jaws"></option>
+               <option value="Doctor Zhivago"></option>
+               <option value="The Exorcist"></option>
+               <option value="Snow white and the Seven Dwarfs"></option>
+               <option value="101 Dalmatian"></option>
+               <option value="Ben-Hur"></option>
+               <option value="Avatar"></option>
+               <option value="The Lion King"></option>
+               <option value="The Sting"></option>
+               <option value="Raiders of the Lost Ark"></option>
+               <option value="Fantasia"></option>
+               <option value="The Godfather"></option>
+               <option value="Mary Poppins"></option>
+               <option value="Black Panther"></option>
+            </datalist>
+
             <!--first filled aspect after search: poster-->
             <div class="poster" id="poster"></div>
             </div>
-        
-        <div class="col-lg-2 col-md-4 " id="dropdown">
-        </div>
+    
         <!--local storage based on history of past searches-->
         <div class="col-lg-6 col-md-12 reviews-section">
             <!--second filled aspect after search: plot-->
-            <div class="col-lg-12 col-md-6  plot"><h2>Plot</h2>
-            <textarea id="plot"></textarea></div>
+            <h3>Plot</h3>
+            <textarea id="plot"></textarea>
             <!--third filled aspect after search: critic rating-->
-            <div class="col-lg-12 col-md-5 critic-ratings" ><h2>Critic Rating</h2>
-            <article id="critic-ratings"></article></div>
+            <h3>Critic Rating</h3>
+            <article id="critic-ratings"></article>
+            <iframe  src="https://www.youtube.com/embed/ax6z-j-xEMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-4 " id="dropdown">
         </div>
     </main>
         
