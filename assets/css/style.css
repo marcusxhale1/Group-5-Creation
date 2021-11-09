@@ -30,7 +30,7 @@
     font-size: 30px;
     background-position: center;
     border-bottom: 10px solid  var(--primary);
-
+    
   }
   /* style the title */
   .title{
@@ -40,7 +40,7 @@
     color: var(--dark);
     opacity: 0.8;
     text-align: center;
-    
+    padding: 15px;
   }
   /* style the poster section */
 .poster-article{
@@ -284,10 +284,10 @@ button:hover {
 }
 @media screen and (min-width:1200px){
   .poster-article{
-    width: 30%;
+    width: 35%;
   }
   .reviews-section{
-    width: 50%;
+    width: 45%;
     padding: 1%;
   }
   #dropdown{
